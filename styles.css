@@ -89,6 +89,7 @@ main {
   background-size: cover;
   font-family: 'Merriweather';
   color: #131511;
+  margin-top: 5%;
 }
 
 .home-header {
@@ -100,7 +101,7 @@ main {
 .main-heading {
   font-size: 10vh;
   font-weight: 200;
-  padding-top: 10%;
+  padding-top: 4%;
   text-align: center;
 }
 
@@ -257,7 +258,7 @@ footer {
   }
 
   .nav-row {
-    padding: 1% 20% 0.50% 20%;
+    padding: 3% 20% 0.50% 20%;
   }
 
 
@@ -272,18 +273,18 @@ footer {
 
   .sub-heading {
     font-size: 3vh;
-    padding: 4% 0% 0% 0%;
+    padding: 4% 0% 2% 0%;
   }
 
   .products {
-    padding-top: 0%;
+    padding-top: 2%;
   }
 
   .top-row {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-content: center;
     align-items: center;
   }
