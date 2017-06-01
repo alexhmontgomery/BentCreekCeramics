@@ -1,0 +1,274 @@
+/*Background: #F2F1E8
+Text: #131511
+Inline Link: #968772 (beige)
+Inline Link (Hover): #967343 (poop brown)
+Navigation Background: #FFFFFF (white)
+Navigation Text: #2B2F26 (hunter green)
+Navigation Text (Hover): #CD5D67 (rasberry)
+Navigation Text (Active) #968772 (beige)
+Button Background: #968772 (beige)
+Button Background (Hover): #967343 (poop brown)
+Button Text: #F2F1E8 (cream)
+Button Text (Hover): #FFFFFF (white)
+Input Border Bottom: #968772 (beige)
+Input Border Bottom (Focus): #967343 (poop brown)*/
+
+
+/*-- NEWSLETTER PAGE - Bent Creek Ceramics --*/
+
+
+* {
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*--Nav Bar--*/
+
+nav {
+  background-color: #FFFFFF;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  text-transform: uppercase;
+  height: 7%;
+  font-family: 'Roboto';
+  font-size: 2.5vh;
+  box-shadow: 0px 3px 15px rgb(230, 230, 230);
+  z-index: 3;
+}
+
+.logo {
+  content: url('../images/optimized/bent-creek-logo.png');
+  height: 5vh;
+  position: fixed;
+  transform: translateY(20%) translateX(20%);
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  margin: 0%;
+  padding: 1.25% 30% 0.50% 30%;
+
+}
+
+.nav-row li {
+  padding: 0% 4%;
+}
+
+.nav-item a {
+  color: #2B2F26;
+}
+
+.nav-item #current-link {
+  color: #968772;
+}
+
+.nav-item a:hover {
+  color: #CD5D67;
+}
+
+.nav-item a:active {
+  color: #968772;
+}
+
+
+/*--Main Section--*/
+
+main {
+  font-family: 'Merriweather';
+  color: #131511;
+  background-image: url('../images/optimized/background-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+  margin: 0%;
+}
+
+.sign-up-module {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.sign-up {
+  background-color: white;
+  position: relative;
+  transform: translateY(50%);
+  margin: 0% 23% 0% 23%;
+  padding: 2%;
+  z-index: 2;
+}
+
+/*--Heading--*/
+
+.heading {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 4vh;
+  padding: 1% 0% 0% 0%;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.5vh;
+  padding: 5% 0% 5% 0%;
+}
+
+/*--Form Inputs--*/
+
+.news-form {
+  font-family: 'Roboto';
+}
+
+.name-input {
+  margin: 2% 0% 2% 0%;
+  padding: 0%;
+  font-size: 1.2em;
+  color: grey;
+}
+
+
+.name-input input {
+  vertical-align: middle;
+  width: 100%;
+  font-size: 1em;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #968772;
+}
+
+.name-input input:focus {
+  border-bottom-color: #967343
+}
+
+
+.email-input {
+  margin: 4% 0% 2% 0%;
+  padding: 0%;
+  font-size: 1.2em;
+  color: grey;
+}
+
+.email-input input {
+  vertical-align: middle;
+  width: 100%;
+  font-size: 1em;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #968772;
+}
+
+.email-input input:focus {
+  border-bottom-color: #967343
+}
+
+/*.email-input input:focus {
+  border-bottom: 2px solid #967343;
+}*/
+
+
+.submit {
+  text-align: center;
+  margin-top: 3%;
+}
+
+#signupButton {
+  background-color: #968772;
+  color: #F2F1E8;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 3% 5% 3% 5%;
+  border: none;
+}
+
+#signupButton:hover {
+  background-color: #967343;
+  color: #FFFFFF;
+}
+
+
+
+
+
+/*----Mobile & Tablet Display----*/
+
+@media screen and ( max-width: 650px ) {
+
+  /*--Nav Bar--*/
+
+  nav {
+    height: 5%;
+    font-size: 1.5vh;
+  }
+
+  .logo {
+    height: 3.5%;
+  }
+
+  .nav-row {
+    padding: 1% 20% 0.50% 20%;
+  }
+
+
+  /*--Main Section--*/
+
+  .sign-up {
+    transform: translateY(60%);
+    margin: 0% 10% 0% 10%;
+    padding: 2%;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 3.5vh;
+    font-weight: 500;
+    padding: 3% 0%;
+  }
+
+  h3 {
+    font-size: 2.5vh;
+    font-weight: 500;
+  }
+
+  .name-input {
+    font-size: 2.5vh;
+    margin: 1% 0%;
+  }
+
+  .email-input {
+    font-size: 2.5vh;
+    margin: 2% 0% 1% 0%;
+  }
+
+  .submit {
+    font-size: 2.0vh;
+    margin-top: 7%;
+  }
+
+  #signupButton {
+    padding: 4%;
+  }
+}

@@ -1,0 +1,358 @@
+/*Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF -home
+Navigation Text: #2B2F26 -home
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8 -home
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343*/
+
+
+/*-- HOME PAGE - Bent Creek Ceramics --*/
+
+
+* {
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*--Nav Bar--*/
+
+nav {
+  background-color: #FFFFFF;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  text-transform: uppercase;
+  height: 7%;
+  font-family: 'Roboto';
+  font-size: 2.5vh;
+  box-shadow: 0px 3px 15px rgb(230, 230, 230);
+  z-index: 3;
+}
+
+.logo {
+  content: url('./images/optimized/bent-creek-logo.png');
+  height: 5vh;
+  position: fixed;
+  transform: translateY(20%) translateX(20%);
+}
+
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  padding: 1.25% 30% 0.50% 30%;
+}
+
+.nav-row li {
+  padding: 0% 4%;
+}
+
+.nav-item a {
+  color: #2B2F26;
+}
+
+.nav-item #current-link {
+  color: #968772;
+}
+
+.nav-item a:hover {
+  color: #CD5D67;
+}
+
+.nav-item a:active {
+  color: #968772;
+}
+
+/*--Main Section--*/
+
+main {
+  background-color: #F2F1E8;
+  background-size: cover;
+  font-family: 'Merriweather';
+  color: #131511;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.main-heading {
+  font-size: 10vh;
+  font-weight: 200;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 7vh;
+  font-weight: 300;
+  padding: 2% 0% 0.5% 0%;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 2%;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0% 1% 0% 1%;
+  padding: 1% 0% 0.5% 0%;
+
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0% 1% 0% 1%;
+  padding: 0.5% 0% 2% 0%;
+}
+
+.home-top-img {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-end;
+}
+
+
+.home-top-img h5 {
+  background-color: rgb(43, 47, 38);
+  color: #F2F1E8;
+  font-weight: 200;
+  padding: 15px;
+  margin: 0px 0px 15px 0px;
+}
+
+.home-bot-img {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-end;
+}
+
+
+.home-bot-img h5 {
+  background-color: rgb(43, 47, 38);
+  color: #F2F1E8;
+  font-weight: 200;
+  padding: 15px;
+  margin: 0px 0px 15px 0px;
+}
+
+#product-1-img {
+  background-image: url('./images/optimized/product-1.jpg');
+  background-size: cover;
+  height: 20em;
+  width: 51%;
+}
+
+
+#product-2-img {
+  background-image: url('./images/optimized/product-2.jpg');
+  background-size: cover;
+  height: 20em;
+  width: 22%;
+
+}
+
+#product-3-img {
+  background-image: url('./images/optimized/product-3.jpg');
+  background-size: cover;
+  height: 20em;
+  width: 22%;
+
+}
+
+#product-4-img {
+  background-image: url('./images/optimized/product-4.jpg');
+  background-size: cover;
+  height: 15em;
+  width: 20%;
+}
+
+#product-5-img {
+  background-image: url('./images/optimized/product-5.jpg');
+  background-size: cover;
+  height: 15em;
+  width: 20%;
+}
+
+#product-6-img {
+  background-image: url('./images/optimized/product-6.jpg');
+  background-size: cover;
+  height: 15em;
+  width: 33%;
+}
+
+#product-7-img {
+  background-image: url('./images/optimized/product-7.jpg');
+  background-size: cover;
+  height: 15em;
+  width: 20%;
+
+}
+
+
+footer {
+  background-color: rgb(43, 47, 38);
+  color: white;
+  background-size: cover;
+  font-family: 'Merriweather';
+  font-size: 0.8em;
+  padding: 2%;
+}
+
+
+/*----Mobile & Tablet Display----*/
+
+@media screen and ( max-width: 650px ) {
+
+  /*--Nav Bar--*/
+
+  nav {
+    height: 5%;
+    font-size: 1.5vh;
+  }
+
+  .logo {
+    height: 3.5%;
+  }
+
+  .nav-row {
+    padding: 1% 20% 0.50% 20%;
+  }
+
+
+  /*--Main Section--*/
+
+
+  .main-heading {
+    font-size: 5vh;
+    font-weight: 500;
+    padding: 20% 3% 4% 3%;
+  }
+
+  .sub-heading {
+    font-size: 3vh;
+    padding: 4% 0% 0% 0%;
+  }
+
+  .products {
+    padding-top: 0%;
+  }
+
+  .top-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+  }
+
+  .top-row div {
+    margin: 2% 0%;
+  }
+
+  .home-top-img h5 {
+    font-size: 1.75vh;
+  }
+
+  .bottom-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .bottom-row div {
+    margin: 2% 0%;
+  }
+
+  .home-bot-img h5 {
+    font-size: 1.75vh;
+  }
+
+  #product-1-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  #product-2-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  #product-3-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  #product-4-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  #product-5-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  #product-6-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  #product-7-img {
+    width: 60%;
+    max-height: 250px;
+  }
+
+  /*--Footer--*/
+
+  footer {
+    font-size: 1.5vh;
+    padding: 2%;
+  }*/
+
+}
